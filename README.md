@@ -1,4 +1,6 @@
 # Chem-172
 Notes for the Chem 172 course
 
-This will be the README
+Notes are current to week: 4
+
+Documents were written in LaTeX and TeXWorks.
