@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[headings]{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[margin=1in]{geometry}
+
+
+\title{Chemistry 172}
+\author{$I \Sigma \Pi$}
+\date{Winter 2016}
+
+\begin{document}
+
+\maketitle
+
+Entropy Equations
+
+\begin{table}[h]
+\centering
+\caption{Equations for Entropy}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Vary Temperature & Vary Pressure   & Vary Volume   \\
+\hline
+$\Delta S = C_\text{v/p}\ln{\frac{T_\text{f}}{T_\text{i}}}$   & $\Delta S = nR\ln{\frac{P_\text{i}}{P_\text{f}}}$ & $\Delta S = nR\ln{\frac{V_\text{f}}{V_\text{i}}}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{equation*}
+S = k\ln{W}
+\end{equation*}
+
+
+
+Enthalpy Equations\\
+\begin{equation*}
+\begin{split}
+\
+\Delta H &= \Delta U + P \Delta V \\ 
+\
+\Delta H &= \Delta U + \Delta n RT\\
+\
+\Delta H &= \frac{C_\text{p}}{\Delta T}\\
+\
+\Delta U &= \frac{C_\text{v}}{\Delta T}\\
+\
+C_p &= C_v + nR\\
+\
+w_\text{sys} & = - \int_{V_\text{f}}^{V_\text{i}} P dV
+\end{split}
+\end{equation*}
+
+\begin{table}[h]
+\centering
+\caption{Equations for Work}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Constant Pressure & Constant Temperature & Constant Volume   \\
+\hline
+$w_\text{sys} = - P_{\text{ext}} \Delta V$   & $w_\text{sys} = - n R T\ln{\frac{V_\text{f}}{V_\text{i}}}$ & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Ideal Molecules}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Molecule & Translation & Rotation & $C_\text{v}$ & $C_\text{p}$ & Internal Energy  \\
+\hline
+Atom & 3 & 0 & $\frac{3}{2}R$ & $\frac{5}{2}R$ & $\frac{3}{2}\ nRT$\\
+\hline
+Linear & 3 & 2 & $\frac{5}{2}R$& $\frac{7}{2}R$ & $\frac{5}{2}\ nRT$\\
+\hline
+Non-Linear & 3 & 3 & 3R & 4R & 3\ nRT\\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\end{document}
