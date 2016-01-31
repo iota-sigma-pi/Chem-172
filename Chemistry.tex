@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[headings]{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+
+\title{Chemistry 172}
+\author{Benjamen Lim}
+\date{Winter 2016}
+
+\begin{document}
+
+\maketitle
+
+Entropy Equations
+
+\begin{table}[h]
+\centering
+\caption{Equations for Entropy}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Vary Temperature & Vary Pressure   & Vary Volume   \\
+\hline
+$\Delta S = C_{v/p}\ ln \frac{T_f}{T_i}$   & $\Delta S = nR\ ln \frac{P_i}{P_f}$ & $\Delta S = nR\ ln \frac{V_f}{V_i}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{equation*}
+S = k\ ln\ W
+\end{equation*}
+
+
+
+Enthalpy Equations\\
+\begin{equation*}
+\begin{split}
+\
+\Delta H &= \Delta U + P \Delta V \\ 
+\
+\Delta H &= \Delta U + \Delta n RT\\
+\
+\Delta H &= \frac{C_p}{\Delta T}\\
+\
+\Delta U &= \frac{C_v}{\Delta T}\\
+\
+C_p &= C_v + nR\\
+\
+w_{sys} & = - \int_{V_f}^{V_i} P dV
+\end{split}
+\end{equation*}
+
+\begin{table}[h]
+\centering
+\caption{Equations for Work}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Constant Pressure & Constant Temperature & Constant Volume   \\
+\hline
+$w_{sys} = - P_{ext} \Delta V$   & $w = n R T\ ln \frac{V_f}{V_i}$ & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Ideal Molecules}
+\label{my-label}
+\def\arraystretch{1.5}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Molecule & Translation & Rotation & $C_v$ & $C_p$ & Internal Energy  \\
+\hline
+Atom & 3 & 0 & $\frac{3}{2}R$ & $\frac{5}{2}R$ & $\frac{3}{2}\ nRT$\\
+\hline
+Linear & 3 & 2 & $\frac{5}{2}R$& $\frac{7}{2}R$ & $\frac{5}{2}\ nRT$\\
+\hline
+Non-Linear & 3 & 3 & 3R & 4R & 3\ nRT\\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\end{document}
