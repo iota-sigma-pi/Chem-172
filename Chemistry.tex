@@ -133,6 +133,11 @@ Q_\text{h/c} = nRT_\text{h/c} \frac{V_\text{2}}{V_\text{1}}
 \Delta G = \Delta H - T \Delta S
 \end{equation*}
 
+At equilibirum, $\Delta G =0$ and this yields:
+
+\[
+\Delta S = \Delta H/T 
+\]
 \begin{table}[h!]
 \centering
 \caption{Gibbs Free Energy}
@@ -176,10 +181,19 @@ Vapor pressure is also dependent on intermolecular forces.\\
 \begin{center}
 Where X' refers to the new conditions and $X^{\circ}$ refers to the known values at the substance's boiling point.
 \end{center}
+
+Clausius-Clapeyron Equation:
 \[
-P_{vap} = Ae^{\frac{-\Delta H^{\circ}_{vap}}{RT}},\ A=e^{\frac{\Delta H^{\circ}_{vap}}{RT_B}}
+P_{vap} = Ae^{-\Delta H^{\circ}_{vap}/RT},\ A=e^{\Delta H^{\circ}_{vap}/RT_B}
 \]
-\begin{figure}[h]
+Assumptions: 
+\begin{enumerate}
+\item$\Delta H_{vap}$ and $\Delta S_{vap}$ remain approximately constant.
+\item Gas is ideal
+\item The molar pressure of the water is much greater than the molar pressure of the gas. 
+\end{enumerate}
+
+\begin{figure}[hbt!]
 \centering
 \includegraphics[scale=0.5]{phase.png}
 \caption{Phase Diagram}
@@ -192,7 +206,7 @@ a A + b B \leftrightarrow c C + d D
 \]
 
 
-The most general case for the equilibrium constant would be the fraction of the concentration of the products raised to the power of their coefficients over the concentration of the reactants.
+The most general case for the equilibrium constant would be the fraction of the concentration of the products raised to the power of their coefficients over the concentration of the reactants. The following ratios are also known by the law of mass ratios.
 
 \[
 K = \frac{\text{products}}{\text{reactants}}
@@ -219,7 +233,7 @@ Note that solids do not enter the equation here.
 \Delta G = \Delta G^{\circ} + RT \ln Q
 \]
 
-Where Q is the activity at any time. K can be substituted for Q at equilibrium.
+Where Q is the activity at any time. K can be substituted for Q at equilibrium. At equilibrium, $\Delta G$ is zero.
 
 \[
 K = e^{-\frac{\Delta G^{\circ}}{RT}},\ \text{(At equilibrium)}
