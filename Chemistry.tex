@@ -32,7 +32,7 @@
 \hline
 Vary Temperature & Vary Pressure & Vary Volume   \\
 \hline
-$\Delta S = C_\text{v/p}\ln{\frac{T_f}{T_i}}$   & $\Delta S = nR\ln{\frac{P_i}{P_i}}$ & $\Delta S = nR\ln{\frac{V_f}{V_i}}$ \\
+$\Delta S = C_\text{v/p}\ln{\frac{T_f}{T_i}}$   & $\Delta S = nR\ln{\frac{P_i}{P_f}}$ & $\Delta S = nR\ln{\frac{V_f}{V_i}}$ \\
 \hline
 \end{tabular}
 \end{table}
@@ -41,10 +41,13 @@ $\Delta S = C_\text{v/p}\ln{\frac{T_f}{T_i}}$   & $\Delta S = nR\ln{\frac{P_i}{P
 S = k\ln{W}
 \end{equation*}
 
-
 \begin{equation*}
-S_{\text{surr}} = - q_{\text{reaction}}/T 
+S_{\text{surr}} = - q_{\text{reaction}}/T = - \frac{\Delta H_{sys}}{T}
 \end{equation*}
+
+\[
+T = \frac{\Delta U}{\Delta S}
+\]
 
 
 
@@ -62,7 +65,9 @@ S_{\text{surr}} = - q_{\text{reaction}}/T
 \
 C_p &= C_v + nR\\
 \
-w_\text{sys} & = - \int_{V_f}^{V_i} P dV
+w_\text{sys} & = - \int_{V_f}^{V_i} P dV\\
+\
+dG & = w_{non-exp}\\
 \end{split}
 \end{align*}
 
@@ -170,6 +175,9 @@ $\Delta U$ is same for paths that start and end point. $w_{rev} > w_{irr}$
 \]
 
 \section{Vapor Pressure}
+\[
+T = \frac{\Delta H_{vap}}{\Delta S_{vap}}
+\]
 
 Pressure at which the liquid and vapor are in dynamic equilibrium is called the vapor pressure. Once the external pressure meets the vapor pressure at that temperature, the liquid will start to boil. Hence, the vapor pressure is dependent on the temperature, and the boiling point is dependent on external pressure. Note that these two relationships are not the same. \\
 \\
