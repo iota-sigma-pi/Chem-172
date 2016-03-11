@@ -3,7 +3,7 @@ Notes for the Chem 172 course
 
 Contributors: Alex-Ortiz
 
-Notes are current to week: 8, Tuesday
+Notes are current to week: 9, Friday
 
 There is plenty of white space in the document. It is intended that the reader add their own notes to the document.
 
