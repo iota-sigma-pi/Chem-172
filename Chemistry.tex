@@ -46,8 +46,11 @@ S_{\text{surr}} = - q_{\text{reaction}}/T = - \frac{\Delta H_{sys}}{T}
 \end{equation*}
 
 \[
-T = \frac{\Delta U}{\Delta S}
+T = \frac{\Delta U}{\Delta S} = (\frac{dU}{dS})_v
 \]
+
+\subsubsection{Entropy for energy states} 
+Choose lower levels first, and go up correspondingly. Multiply the options. Note that you don't have to do the last step because once you chose everything but the last stage, then there is no choice there. 
 
 
 
@@ -179,16 +182,27 @@ $\Delta U$ is same for paths that start and end at the same point. $w_{rev} > w_
 T = \frac{\Delta H_{vap}}{\Delta S_{vap}}
 \]
 
-Pressure at which the liquid and vapor are in dynamic equilibrium is called the vapor pressure. Once the external pressure meets the vapor pressure at that temperature, the liquid will start to boil. Hence, the vapor pressure is dependent on the temperature, and the boiling point is dependent on external pressure. Note that these two relationships are not the same. \\
-\\
-Vapor pressure is also dependent on intermolecular forces.\\
+Pressure at which the liquid and vapor are in dynamic equilibrium is called the vapor pressure. 
+\[
+P_{ext}=P_{vapor}
+\]
+
+
+
+Once the external pressure meets the vapor pressure at that temperature, the liquid will start to boil. Hence, the vapor pressure is dependent on the temperature, and the boiling point is dependent on external pressure. Note that these two relationships are not the same. Vapor pressure is also dependent on intermolecular forces.
+
+We determine vapor pressure using proportional reasoning:
+\[
+P_{vap} = \frac{\Delta}{760mm} \times atm
+\]
+
 
 \[
 \ln{\frac{P'_{vap}}{P^{\circ}_{vap}}} = \frac{\Delta H^{\circ}_{vap}}{R} (\frac{1}{T_B}-\frac{1}{T'})
 \]
 
 \begin{center}
-Where X' refers to the new conditions and $X^{\circ}$ refers to the known values at the substance's boiling point.
+Where X' refers to the new conditions and $X^{\circ}$ refers to the known values at the substance's boiling point. For example, for water, we can set P = 1 bar and $T_B = 373K$, and we can determine its vapor pressure at any other temperature we care to determine it at.
 \end{center}
 
 \[
@@ -228,6 +242,15 @@ The most general case for the equilibrium constant would be the fraction of the 
 K = \frac{\text{products}}{\text{reactants}}
 \]
 
+\subsubsection{Le Chatelier's Principle}
+When stress is applied to a system in dynamic equilibrium, the equilibrium tends to adjust to minimise the effect of the stress.
+
+\begin{enumerate}
+\item Change in Reactants
+\item Change in Pressure
+\item Change in Temperature
+\end{enumerate}
+
 \subsection{Pressure}
 
 \[
@@ -265,7 +288,7 @@ Changing to an unknown equilibrium constant, where K', T' are the new conditions
 \ln \frac{K'}{K} = \frac{\Delta H}{R} (\frac{1}{T} - \frac{1}{T'})
 \]
 
-Note the dependence of K on T. It is not dependant on concentration, pressure, volume, or anything else other than temperature.
+This is known as the Van't Hoff equation. Note the dependence of K on T. It is not dependant on concentration, pressure, volume, or anything else other than temperature.
 
 \section{Acids and Bases}
 
@@ -273,13 +296,13 @@ Note the dependence of K on T. It is not dependant on concentration, pressure, v
 \text{pH} = \text{pKa} + \log[\text{A}^-]/[\text{HA}]
 \]
 
-Use ICE table to determine changes of concentration. Note that you can use overall change in moles and use the final equilibrium conditions to determine the final moles. From there, $x$ can be obtained and the changes can be calculated.
+Use ICE table to determine changes of concentration. Note that you can use overall change in moles and use the final equilibrium conditions to determine the final moles. From there, $x$ can be obtained and the changes can be calculated.\\
 
-pH has nothing to do with how acidic a substance is, it merely refers to the concentration in the solution. Acidity is determined by how strongly the acid dissociates. One way to describe $K_a$ is 'concentration of protons produced per unit concentration of acid'. It is independent of the amount of acid used whereas pH could be dependent on the amount of acid used.
+pH has nothing to do with how acidic a substance is, it merely refers to the concentration in the solution. Acidity is determined by how strongly the acid dissociates. One way to describe $K_a$ is 'concentration of protons produced per unit concentration of acid'. It is independent of the amount of acid used whereas pH could be dependent on the amount of acid used.\\
 
-The strongest buffer point is where pH = pka.
+The strongest buffer point is where pH = pka.\\
 
-Note that when a strong base or acid is added. React the acid/base first before calculating the equilibrium point! Remember that the acid or base completely dissociates, so remember to remove the appropriate amount of $H^+$ or $OH^-$ (and their salts!) before applying the ICE table.
+Note that when a strong base or acid is added. React the acid/base first before calculating the equilibrium point! Remember that the acid or base completely dissociates, so remember to remove the appropriate amount of $H^+$ or $OH^-$ (and their salts!) before applying the ICE table.\\
 
 \section{Redox Reactions}
 Reductions always result in:
@@ -304,7 +327,15 @@ where $n_r$ refers to the number of electrons tranferred in each reaction
 
 \subsection{Cell Diagrams}
 
-Oxidation is on the left, and reduction is on the right. Solid is always on the outside.
+Oxidation is on the left, and reduction is on the right. Solid is always on the outside. Different states are separated by a line. Reactants in the same phase are separated by a comma. Note that it is always written in a way that it flows from left to right
+
+\[
+Cu \rightarrow Cu^{2+} + 2e^- \text{(oxidation)}
+\]
+\[
+Ag^+ + e^- \rightarrow Ag \text{(reduction)}
+\]
+
 \begin{center}
 $Cu|Cu^{2+}||Ag^{+}|Ag$
 \end{center}
@@ -322,7 +353,52 @@ Pt|H_2|H^+||Cu^{+}|Cu
 
 We use a Pt electrode if there are only gases or liquids in the half-cell. In this case, $V^{\circ}_{right} = V^{\circ}_{cell}$. If they are in the same phase, we use a comma to separate them.
 
-C
+\[
+\Delta G^{\circ} = - nF \Delta V^{\circ}
+\]
+
+Where n is the number of electrons transferred in the balanced redox reaction. 
+
+\subsubsection{Deprotonation}
+
+\[
+\% deprotonation = \frac{[H^+]}{[HA]}
+\]
+
+\subsubsection{Nernst Equation}
+\[
+\Delta V = \Delta V^{\circ} - \frac{RT}{nF} ln Q
+\]
+
+where Q:
+
+\[
+Q = \frac{[reactants]_{oxidation}}{[products]_{reduction}}
+\]
+
+\section{Rates}
+\subsection{0th Order}
+\[
+R = k
+\]
+\[
+[A] = kt
+\]
+\subsection{1st Order}
+\[
+R = k[A]
+\]
+\[
+[A] = [A]_0 e^-kt
+\]
+\subsection{2nd Order}
+\[
+R = k [A]^2
+\]
+\[
+\frac{1}{[A]} = \frac{1}{[A]_0} +kt
+\]
+
 
 \section{Credits}
 \begin{enumerate}
