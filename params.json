@@ -1,6 +1,6 @@
 {
   "name": "Chemistry 172 Notes",
   "tagline": "Notes for the Chemistry 172 course",
-  "body": "### Welcome\r\nThis is the landing page for the LaTeX notes on the Chemistry 172 course in Northwestern university. To get started, download the zip file for the .tex and compiled pdf file or visit the github page to view the pdf file online. Please note that the notes are as-is and are intended to provide all of the required information in the course in a concise manner. It is intended that these notes serve as references rather than an absolute guide to the course.\r\n\r\n### Contact\r\nPlease submit support tickets on the github page if there is incorrect or information you would like to add.\r\n",
+  "body": "### Welcome\r\nThis is the landing page for the LaTeX notes on the Chemistry 172 course in Northwestern university. To get started, download the zip file for the .tex and compiled pdf file or visit the github page to view the pdf file online. Please note that the notes are as-is and are intended to provide all of the required information in the course in a concise manner. It is intended that these notes serve as references rather than an absolute guide to the course.\r\n\r\n### Contact\r\nPlease submit support tickets on the github page if there is any incorrect information or information you would like to add.\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
